@@ -1,16 +1,32 @@
-## Hi there 👋
+# Hi, I'm Shaedy
 
-<!--
-**shaedy180/shaedy180** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I build software with a focus on practical, maintainable solutions.
 
-Here are some ideas to get you started:
+## About
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+- Working with TypeScript, Java, Python, and HTML
+- Interested in building useful tools and clean web experiences
+- Open to collaboration and relevant opportunities
+
+## Tech
+
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![HTML](https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=html5&logoColor=white)
+
+## Featured Projects
+
+
+- [OBS Now-Playing Overlay based on Python and HTML](https://github.com/shaedy180/obs-overlay-nowplaying)  
+  Currently my only public repo.
+
+## Stats
+
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=shaedy180&show_icons=true&hide_title=true&include_all_commits=true&count_private=true)
+![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=shaedy180&layout=compact)
+
+## Contact
+
+- Website: shaedy.de
+- Access requests: access@shaedy.de
