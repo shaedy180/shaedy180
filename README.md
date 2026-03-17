@@ -1,12 +1,8 @@
-# Hi, I'm Shaedy
-
-I build software with a focus on practical, maintainable solutions.
+# Hi, I'm shaedy
 
 ## About
 
 - Working with TypeScript, Java, Python, and HTML
-- Interested in building useful tools and clean web experiences
-- Open to collaboration and relevant opportunities
 
 ## Tech
 
@@ -16,7 +12,6 @@ I build software with a focus on practical, maintainable solutions.
 ![HTML](https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=html5&logoColor=white)
 
 ## Featured Projects
-
 
 - [OBS Now-Playing Overlay based on Python and HTML](https://github.com/shaedy180/obs-overlay-nowplaying)  
   Currently my only public repo.
