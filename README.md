@@ -16,11 +16,6 @@
 - [OBS Now-Playing Overlay based on Python and HTML](https://github.com/shaedy180/obs-overlay-nowplaying)  
   Currently my only public repo.
 
-## Stats
-
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=shaedy180&show_icons=true&hide_title=true&include_all_commits=true&count_private=true)
-![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=shaedy180&layout=compact)
-
 ## Contact
 
 - Website: shaedy.de
