@@ -2,21 +2,22 @@
 
 ## About
 
-- Working with TypeScript, Java, Python, and HTML
+- Working with TypeScript, Java, Python, C#, and HTML
 
 ## Tech
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white)
 ![HTML](https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=html5&logoColor=white)
 
 ## Featured Projects
 
-- [OBS Now-Playing Overlay based on Python and HTML](https://github.com/shaedy180/obs-overlay-nowplaying)  
-  Currently my only public repo.
+- **CS2 Plugin Suite** - A collection of CounterStrikeSharp server plugins for Counter-Strike 2, including ranks, map voting, AFK detection, tracers, and more. Check out the repos starting with `shaedy` for the full list.
+- [OBS Now-Playing Overlay](https://github.com/shaedy180/obs-overlay-nowplaying) - Python and HTML based overlay for OBS.
 
 ## Contact
 
 - Website: shaedy.de
-- Access requests: access@shaedy.de
+- Ko-fi: [ko-fi.com/shaedy](https://ko-fi.com/shaedy)
