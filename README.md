@@ -16,6 +16,7 @@
 
 - **CS2 Plugin Suite** - A collection of CounterStrikeSharp server plugins for Counter-Strike 2, including ranks, map voting, AFK detection, tracers, and more. Check out the repos starting with `shaedy` for the full list.
 - [OBS Now-Playing Overlay](https://github.com/shaedy180/obs-overlay-nowplaying) - Python and HTML based overlay for OBS.
+- [Atlas](https://github.com/shaedy180/atlas) - Recipe and item intelligence mod for Minecraft. Search, browse, and understand every recipe, crafting path, and acquisition source in the game. 
 
 ## Contact
 
