@@ -1,0 +1,17 @@
+name: Profile content
+on:
+  push:
+    branches: [main, working-branch]
+  pull_request:
+    branches: [main]
+permissions: {contents: read}
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Validate publishable profile and root documentation
+        run: |
+          test -s README.md && test -s AGENTS.md
+          test "$(find . -name .git -prune -o -iname '*agents*.md' -print | wc -l)" -eq 1
+          git diff --check

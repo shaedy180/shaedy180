@@ -21,3 +21,7 @@
 
 - Website: shaedy.de
 - Ko-fi: [ko-fi.com/shaedy](https://ko-fi.com/shaedy)
+
+## Repository maintenance
+
+This repository publishes the GitHub profile above. Changes use the single `working-branch` → `main` PR, passing content validation, and a merge commit followed by fast-forward synchronization. Read [AGENTS.md](AGENTS.md). There is no deployment workflow or application runtime.
