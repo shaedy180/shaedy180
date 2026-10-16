@@ -28,7 +28,9 @@ function selectRun(runs, workflowId, path, pr) {
   const matching = runs.filter(run => run.workflow_id === workflowId && run.path === path &&
     run.event === 'pull_request' && run.head_sha === pr.head.sha &&
     run.head_repository?.id === pr.head.repo.id &&
-    run.pull_requests.some(item => item.number === pr.number));
+    // GitHub can clear this association after merge. The receipt's PR number,
+    // tested commit parents and merged PR head provide the durable binding.
+    (!run.pull_requests.length || run.pull_requests.some(item => item.number === pr.number)));
   matching.sort((a, b) => b.id - a.id);
   assert.ok(matching.length, 'No matching PR workflow run exists');
   const run = matching[0];
@@ -52,7 +54,7 @@ async function verifyMerge({ github, context, core }) {
   const run = selectRun(listed.workflow_runs, current.workflow_id, current.path, pr);
   const artifacts = await github.paginate(github.rest.actions.listWorkflowRunArtifacts,
     { ...repo, run_id: run.id, per_page: 100 });
-  const pattern = new RegExp(`^validated-([0-9a-f]{40})-attempt-${run.run_attempt}$`);
+  const pattern = new RegExp(`^validated-pr-${pr.number}-([0-9a-f]{40})-attempt-${run.run_attempt}$`);
   const receipts = artifacts.filter(a => !a.expired && pattern.test(a.name));
   assert.equal(receipts.length, 1, 'PR validation receipt is missing, expired or ambiguous');
   const testedSha = receipts[0].name.match(pattern)[1];
@@ -78,7 +80,7 @@ async function recordChecks({ github, context, core }) {
   const receipt = { repository: context.repo, run: context.runId, attempt, merge: context.sha,
     tree: tested.tree.sha, head: context.payload.pull_request.head.sha };
   writeFileSync('ci-validation.json', JSON.stringify(receipt, null, 2) + '\n');
-  core.setOutput('artifact', `validated-${context.sha}-attempt-${attempt}`);
+  core.setOutput('artifact', `validated-pr-${context.payload.pull_request.number}-${context.sha}-attempt-${attempt}`);
 }
 
 async function main(args) {
