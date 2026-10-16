@@ -41,7 +41,7 @@ jobs:
         uses: actions/github-script@v8
         env:
           CI_JOB_RESULTS: ${{ toJSON(needs) }}
-          CI_["build"]_JOBS: '["build"]'
+          CI_REQUIRED_JOBS: '["build"]'
         with:
           script: |
             await require('./.github/scripts/ci-provenance.cjs')({ github, context, core });
