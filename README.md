@@ -12,12 +12,32 @@
 ![C#](https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white)
 ![HTML](https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=html5&logoColor=white)
 
-## Featured Projects
+## Featured projects
 
-- [Atlas](https://github.com/shaedy180/atlas) - Recipe and item intelligence mod for Minecraft. Search, browse, and understand every recipe, crafting path, and acquisition source in the game. 
-- [OBS Now-Playing Overlay](https://github.com/shaedy180/obs-overlay-nowplaying) - Python and HTML based overlay for OBS.
+| Project | What you can find there |
+| --- | --- |
+| [SHAEDY](https://shaedy.de/) | Community site and entry point for invited members. |
+| [CaseSim Desktop](https://github.com/shaedy180/CaseSim-Desktop) | Desktop app for the CS2 case simulator. |
+| [CS2 servers and plugins](https://shaedy.de/gameservers) | Server information for invited members and the [public Retakes plugin](https://github.com/shaedy180/cs2-retakes). |
+| [Hearth & Horizon](https://shaedy.de/gameservers/hearth-and-horizon) | Minecraft modpack information for invited members. |
+| [Atlas](https://github.com/shaedy180/Atlas) | Minecraft recipe and item search. |
+| [OBS Now-Playing Overlay](https://github.com/shaedy180/obs-overlay-nowplaying) | Display the current track in an OBS browser source. |
+
+[![SHAEDY status](https://status.shaedy.de/api/badge/2/status)](https://status.shaedy.de/status/live)
+
+## How the projects connect
+
+```mermaid
+flowchart LR
+  Home["shaedy.de"] --> Games["CS2 and Minecraft"]
+  Home --> Account["SHAEDY account"]
+  Account --> Apps["Invite-only applications"]
+  Apps --> CaseSim["CaseSim"]
+  Home --> Status["Independent status page"]
+```
 
 ## Contact
 
-- Website: shaedy.de
-- Ko-fi: [ko-fi.com/shaedy](https://ko-fi.com/shaedy)
+- [Website](https://shaedy.de/)
+- [Ko-fi](https://ko-fi.com/shaedy)
+- [Security contact](mailto:security@shaedy.de)
